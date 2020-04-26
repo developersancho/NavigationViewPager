@@ -12,7 +12,6 @@ class NavFragment : Fragment() {
 
     private val defaultInt = -1
     private var layoutRes: Int = -1
-    private var toolbarId: Int = -1
     private var navHostId: Int = -1
 
 
@@ -21,7 +20,6 @@ class NavFragment : Fragment() {
         arguments?.let {
             layoutRes = it.getInt(KEY_LAYOUT)
             navHostId = it.getInt(KEY_NAV_HOST)
-
         } ?: return
     }
 
